@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Logic Gate Simulator</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+            #mycanvas {
+                border: 5px solid white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            #load {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .sound {
+                visibility: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h2>Controls</h2>
+        <p>
+            Use W, A, S, D to move the camera, <br>
+            Z to zoom out, and X to zoom in. <br>
+            Use Q and E to cycle through node types. <br>
+            Click to place a node, <br> right-click to delete. <br>
+            Drag between two nodes to connect them. <br>
+            SPACE to run and quit running. <br>
+        </p>
+
+        <p>
+            <a href="https://github.com/Tux-76-Archive/logic-gate-simulator-js">Project on GitHub</a><br>
+            <a href="https://tux-76.github.io">Tux-76 Home</a>
+        </p>
+
+        <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+        <canvas width="400" id="mycanvas"></canvas>
+        
+        <button id="load"> Load Game </button>
+             
+        
+
+
+        <script src="js/app.js"></script>
+
+    </body>
+</html>
+
